@@ -28,7 +28,7 @@ const Login = () => {
     }
 
     const customer = { name, surname, email, password };
-    const response = await fetch('/api/customers', {
+    const response = await fetch('/customers', {
       method: 'POST',
       body: JSON.stringify(customer),
       headers: {

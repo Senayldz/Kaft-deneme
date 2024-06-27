@@ -16,7 +16,7 @@ const KampanyaliUrunler = () => {
     const fetchProducts = async (filters = {}) => {
         setLoading(true);
         const queryString = new URLSearchParams(filters).toString();
-        const response = await fetch(`/api/products?${queryString}`);
+        const response = await fetch(`/products?${queryString}`);
         const data = await response.json();
 
         if (response.ok) {

@@ -22,7 +22,7 @@ const AddProduct = () => {
     formData.append('count', count);
 
     try {
-      const response = await fetch('http://localhost:3000/api/products', {
+      const response = await fetch('http://localhost:3000/products', {
         method: 'POST',
         body: formData,
       });

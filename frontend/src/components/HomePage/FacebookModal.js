@@ -16,7 +16,7 @@ function FacebookModal() {
                 const accessToken = response.authResponse.accessToken;
                 console.log('Access Token:', accessToken);
 
-                axios.post('/api/facebook-login', { accessToken })
+                axios.post('/facebook-login', { accessToken })
                     .then(response => {
                         console.log('Sunucudan Gelen Yanıt:', response.data);
                         toggleModal();

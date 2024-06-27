@@ -17,7 +17,7 @@ const Home = () => {
 
     useEffect(() => {
         const fetchCustomers = async () => {
-            const response = await fetch('/api/customers')
+            const response = await fetch('/customers')
             const json = await response.json()
 
             if (response.ok) {
@@ -29,7 +29,7 @@ const Home = () => {
     }, [])
 
     const handleClick = async (id) => {
-        const response = await fetch('/api/customers/' + id, {
+        const response = await fetch('/customers/' + id, {
             method: 'DELETE'
         })
         const json = await response.json()

@@ -36,7 +36,7 @@ function Basket() {
         const productDetails = await Promise.all(
           cart.map(async (item) => {
             if (item.type === 'product') {
-              const response = await fetch(`/api/products/${item.id}`);
+              const response = await fetch(`/products/${item.id}`);
               if (!response.ok) {
                 throw new Error('Ürün bulunamadı.');
               }

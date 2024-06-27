@@ -16,7 +16,7 @@ function PasswordResetRequest() {
     const enteredEmail = email.trim();
 
     try {
-      const response = await fetch('/api/resetpassword/check', {
+      const response = await fetch('/resetpassword/check', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ function PasswordResetRequest() {
 
   const handleResetPassword = async (newPassword) => {
     try {
-      const response = await fetch('/api/resetpassword/update', {
+      const response = await fetch('/resetpassword/update', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

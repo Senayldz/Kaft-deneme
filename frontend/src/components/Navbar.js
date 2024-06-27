@@ -23,7 +23,7 @@ function Navbar() {
     const showSidebar = () => setSidebar(!sidebar);
 
     const fetchProducts = async (query) => {
-        const response = await fetch(`/api/products?search=${query}`);
+        const response = await fetch(`/products?search=${query}`);
         const data = await response.json();
         if (response.ok) {
             setSearchResults(data);

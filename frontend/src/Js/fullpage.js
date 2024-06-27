@@ -161,7 +161,7 @@
 
     /**
     * forEach polyfill for IE
-    * https://developer.mozilla.org/en-US/docs/Web/API/NodeList/forEach#Browser_Compatibility
+    * https://developer.mozilla.org/en-US/docs/Web/NodeList/forEach#Browser_Compatibility
     */
 
     if (win.NodeList && !NodeList.prototype.forEach) {

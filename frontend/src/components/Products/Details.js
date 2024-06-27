@@ -17,7 +17,7 @@ const Details = () => {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const response = await fetch(`/api/products/${id}`);
+                const response = await fetch(`/products/${id}`);
                 if (!response.ok) {
                     throw new Error('Ürün bulunamadı.');
                 }
