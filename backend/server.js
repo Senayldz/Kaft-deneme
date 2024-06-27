@@ -20,14 +20,14 @@ app.use((req, res, next) => {
 })
 
 // Statik dosya servisi
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use('/', express.static(path.join(__dirname, './frontend/public/index.html')));
 
 //Routes
-app.use('/customers', customerRoutes)
-app.use('/auth', authRoutes)
-app.use('/resetpassword', resetPasswordRoutes)
-app.use('/products', productRoutes)
-app.use('/address', addressRoutes)
+app.use('/api/customers', customerRoutes)
+app.use('/api/auth', authRoutes)
+app.use('/api/resetpassword', resetPasswordRoutes)
+app.use('/api/products', productRoutes)
+app.use('/api/address', addressRoutes)
 // Değişiklik burada, dosya ismi doğru olmalı
 
 
