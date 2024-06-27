@@ -30,7 +30,7 @@ function AddressForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/address', {
+      await axios.post('https://kaft-deneme-3y3m.vercel.app/address', {
         address,
         postalCode,
         city,

@@ -22,7 +22,7 @@ const AddProduct = () => {
     formData.append('count', count);
 
     try {
-      const response = await fetch('http://localhost:3000/products', {
+      const response = await fetch('https://kaft-deneme-3y3m.vercel.app/products', {
         method: 'POST',
         body: formData,
       });
